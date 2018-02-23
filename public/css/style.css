@@ -1,0 +1,535 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1 Normalize
+2 Typography
+3 Elements
+4 Forms
+5 Navigation
+        5.1 Links
+        5.2 Menus
+6 Grid
+7 Alignments
+8 Google Maps
+9 Widgets
+10 Content
+        10.1 Posts and pages
+        10.2 Comments
+11 Footer
+12 Media
+        12.1 Captions
+        12.2 Galleries
+13 Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1 Normalize
+--------------------------------------------------------------*/
+
+html, body {
+    color: #636b6f;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 100;
+    margin: 0;
+
+}
+
+body {
+    height: 100vh;
+    background: url("/images/overlay-carbon.png") repeat scroll 0 0;
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.contenido {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  padding: 20px;
+  width: 1170px;
+  background: #fff;
+  height: 100%;
+  position: relative;
+  
+}
+
+.wrapper {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  padding: 20px;
+  width: 1170px;
+  background: #fff;
+  min-height: 670px;
+  position: relative;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+margin-top: 30px;
+text-align: justify;
+}
+
+.title {
+font-size: 15px;
+line-height: 20px;
+text-align: center;
+z-index: 500;
+}
+
+.actor-img {
+    padding: 0 0 30px 30px;
+}
+
+/*--------------------------------------------------------------
+2 Typography
+--------------------------------------------------------------*/
+
+body {
+    font-size: 20px;
+}
+
+.panel-title {
+  font-size: 24px;
+}
+/*--------------------------------------------------------------
+3 Elements
+--------------------------------------------------------------*/
+.panel {
+  background-color: #fff;
+  border-radius: 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.panel-body {
+  padding: 0;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  padding: 8px 30px;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.base {
+    border-bottom: none;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.post-title {
+background-color: #337ab7;
+color: #fff;
+margin-bottom: 30px;
+padding: 10px 15px;
+}
+th select, th select option {
+    border: none;
+}
+#carousel, #nav {
+    margin-bottom: 30px
+}
+
+.carousel-caption a {
+    color: #fff;
+}
+
+.event-box {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    height: 330px;
+    padding: 5px;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    white-space: normal;
+    width: 100%;
+}
+
+.description {
+    height: 40px;
+}
+
+.carousel {
+  margin-bottom: 0;
+}
+
+.carousel-caption {
+    left: 345px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 60%;
+}
+
+.carousel .item {
+  background-color: #000;
+}
+
+.carousel-control {
+  left: 238px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+  font-size: 30px;
+  height: 30px;
+  margin-top: 90px;
+  width: 30px;
+}
+
+.carousel-indicators {
+  margin-left: -20%;
+}
+
+.carousel .item {
+  background: rgba(0, 0, 0, 0.4) url("/images/overlay-carbon.png") repeat scroll 0 0;
+}
+
+.meta{
+    margin-top: -20px;
+}
+
+.details {
+    bottom: 14px;
+    position: absolute;
+    text-align: center;
+}
+
+
+.nav-tabs > li {
+  width: 33%;
+}
+
+
+.film-list .nav-tabs > li {
+  width: 20%;
+}
+.nav-tabs > li > a, .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span {
+  border-radius: 0;
+
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background-color: #337ab7;
+  color: #fff;
+}
+
+.info, .info h4, .info .small {
+   z-index: 99; 
+  background: transparent;
+  color: transparent;
+  padding: 30px 0;
+  height: 175px;
+  margin-top: -175px;
+  position: relative;
+  text-align: center;
+     -webkit-transition: all 1s ease-out;
+     -moz-transition: all 1s ease-out;
+     -o-transition: all 1s ease-out;
+     transition: all 1s ease-out;
+}
+
+.info:hover, .info h4:hover, .info .small:hover{
+  background: rgba(0, 0, 0, 1) none repeat scroll 0 0;
+  color: #fff;
+}
+
+
+.info a {
+    color: #fff;
+    margin-top: 30px;
+}
+
+.info a:hover {
+    text-decoration: none;
+}
+
+.pagination {
+  margin: 50px 0 0;
+}
+/*--------------------------------------------------------------
+4 Forms
+--------------------------------------------------------------*/
+.btn, .alert {
+  border-radius: 0;
+}
+
+.form-spacing-top {
+    margin-top: 20px;
+}
+
+.form-control {
+  font-size: 20px;
+  height: 40px;
+      
+}
+/*--------------------------------------------------------------
+5 Navigation
+--------------------------------------------------------------*/
+
+.navbar-nav > li > a, .navbar-brand {
+    color: #777;
+    font-size: 24px;
+}
+
+.search-group {
+    padding-top: 8px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+  color: #216a94;
+  background: transparent;
+  text-decoration: none;
+}
+
+.navbar-wrapper {
+    position: relative;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 0;
+    margin-bottom: 8px;
+    background-color: #dedede;
+    background-image: none;
+    border: 1px solid #dedede;
+    border-radius: 0;
+    color: #444;
+}
+/*--------------------------------------------------------------
+6 Grid
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+7 Alignments
+--------------------------------------------------------------*/
+.bottom-50 {
+    margin-bottom: 50px;
+}
+
+.bottom-30 {
+    margin-bottom: 30px;
+}
+.glyphicon {
+    margin-right: 20px;
+}
+
+
+/*--------------------------------------------------------------
+8 Google Maps
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+9 Widgets
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+10 Content
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+11 Footer
+--------------------------------------------------------------*/
+
+.footer {
+    height: 70px;
+    padding: 20px;
+    width: 100%;
+}
+/*--------------------------------------------------------------
+12 Media
+--------------------------------------------------------------*/
+
+.image {
+margin: 2px;
+max-height: 100%;
+width: 100%;
+}
+
+
+.image_category {
+    float: left;
+}
+
+.image-box {
+    float: left;
+    margin:2px;
+    width: 12%;
+    height: 175px; 
+}
+/*--------------------------------------------------------------
+12 Media Queries
+--------------------------------------------------------------*/
+
+/* iPhone 6 Media Queries */
+
+/* iPhone 6 in landscape */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) 
+{ 
+
+    body {
+        padding: 0;
+    }
+    
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+        min-height: 100%;
+      }
+      
+      h1 {
+          font-size: 24px;
+      }
+      
+    .tab-responsive, .video-js {
+        width: 33% !important;
+    }
+    .video-js {
+        max-height: 600px !important;
+    }
+    
+    #nav, .navbar {
+      margin-bottom: 0;
+    }
+
+    .navbar-wrapper .navbar, .navbar-collapse, .navbar-collapse.in {
+      margin-top: 0;
+      padding: 0;
+    }
+
+    .navbar-brand {
+        padding: 15px;
+    }
+    .bottom-50 {
+        margin: 0;
+    }
+
+    .mobile, #carousel {
+        display:none;
+    }
+    
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 0;
+    padding-left: 0;
+    }
+    
+    .event-box {
+        width: 25%;
+        float: left;
+        height: 260px;
+    }
+
+    .event-box .image {
+        height: 250px;
+    }
+    
+    .pagination {
+            margin: 10px;
+        }
+        
+        .info, .info h4, .info .small {
+           display: none;
+        }
+}
+
+/* iPhone 6 in portrait */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) 
+{
+
+    body {
+        padding: 0;
+    }
+    
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+        min-height: 100%;
+      }
+      
+      h1 {
+          font-size: 24px;
+      }
+      
+    .tab-responsive, .video-js {
+        width: 100% !important;
+    }
+    .video-js {
+        max-height: 600px !important;
+    }
+    
+    #nav, .navbar {
+      margin-bottom: 0;
+    }
+
+    .navbar-wrapper .navbar, .navbar-collapse, .navbar-collapse.in {
+      margin-top: 0;
+      padding: 0;
+    }
+
+    .navbar-brand {
+        padding: 15px;
+    }
+    .bottom-50 {
+        margin: 0;
+    }
+
+    .mobile, #carousel {
+        display:none;
+    }
+    
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 0;
+    padding-left: 0;
+    }
+    
+    .event-box {
+        width: 50%;
+        float: left;
+        height: 330px;
+    }
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Rafael/Documents/Kino/resources/views/actors/show.blade.php</file>
+            <file>file:/C:/Users/Rafael/Documents/Kino/app/Http/Controllers/ActorController.php</file>
+            <file>file:/C:/Users/Rafael/Documents/Kino/app/Http/Controllers/FilmController.php</file>
+            <file>file:/C:/Users/Rafael/Documents/Kino/resources/views/ages/show.blade.php</file>
+            <file>file:/C:/Users/Rafael/Documents/Kino/public/css/style.css</file>
+            <file>file:/C:/Users/Rafael/Documents/Kino/resources/views/year/show.blade.php</file>
+            <file>file:/C:/Users/Rafael/Documents/Kino/resources/views/languages/show.blade.php</file>
+            <file>file:/C:/Users/Rafael/Documents/Kino/resources/views/films/show.blade.php</file>
+            <file>file:/C:/Users/Rafael/Documents/Kino/resources/views/categories/show.blade.php</file>
+        </group>
+    </open-files>
+</project-private>
